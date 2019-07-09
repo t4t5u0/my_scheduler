@@ -1,3 +1,3 @@
 void lock_screen(){
-    clock(300);
+    clock(300,width,height);
 }

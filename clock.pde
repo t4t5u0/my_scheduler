@@ -1,4 +1,4 @@
-void clock(int clock_width){
+void clock(int clock_width,int screen_width, int screen_height){
   float s = second();
   float m = minute() + (s/60.0);
   float h = hour()%12 + (m/60.0);
