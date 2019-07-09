@@ -16,7 +16,7 @@ void clock(int clock_width){
   pushMatrix();
   rotate(radians(s*6));
   strokeWeight(1);
-  tepla("秒針",0,0,-clock_width/2,15);
+  tepla("秒針",0,-7.5,-clock_width/2,15);
   //line(0,0,0,-clock_width/2);
   popMatrix();
 
@@ -24,14 +24,16 @@ void clock(int clock_width){
   pushMatrix();
   rotate(radians(m*6));
   strokeWeight(2);
-  line(0,0,0,-clock_width/2);
+  tepla("分針",0,-7.5,-clock_width/2,15);
+  //line(0,0,0,-clock_width/2);
   popMatrix();
 
   //時針
   pushMatrix();
   rotate(radians(h*24));
   strokeWeight(4);
-  line(0,0,0,-clock_width/3);
+  tepla("時針",0,-7.5,-clock_width/3,15);
+  //line(0,0,0,-clock_width/3);
   popMatrix();
 
 }

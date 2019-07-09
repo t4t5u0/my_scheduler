@@ -2,7 +2,8 @@ int screen_transition_number = 0;
 void setup(){
   size(480,640);
   PFont font;
-  font = createFont("ＭＳ Ｐゴシック.vlw",32);
+  font = loadFont("MS-Gothic-32.vlw");
+  textFont(font);
 }
 
 void draw(){

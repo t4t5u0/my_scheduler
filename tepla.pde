@@ -1,6 +1,8 @@
-void tepla(String ravel,int ravel_x,int ravel_y,int ravel_width,int ravel_height){
-    fill(255);
-    rect(ravel_x,ravel_y,ravel_width,ravel_height);
+void tepla(String ravel,float ravel_x,float ravel_y,float ravel_width,float ravel_height){
     fill(0,255,0);
-    text(ravel,(ravel_width-(30*ravel.length())/2),(ravel_height-(30*ravel.length())/2));    
+    noStroke();
+    rect(ravel_x,ravel_y,ravel_width,ravel_height);
+    fill(0);
+    textSize(15);
+    text(ravel,(ravel_width-15*ravel.length())/2,(ravel_height/2)-3);
 }
