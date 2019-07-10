@@ -8,7 +8,7 @@ void clock(int clock_width,int screen_width, int screen_height){
   fill(127);
   stroke(255);
   rect(-screen_width/3,-screen_width/3,screen_width/3*2,screen_width/3*2);
-  //rainbow(screen_width,screen_height);
+  rainbow(screen_width,screen_height);
 
   //秒針
   pushMatrix();
