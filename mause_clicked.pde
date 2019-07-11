@@ -1,27 +1,23 @@
-int screen_transition_number = 0;
-void setup() {
-  size(480, 640);
-}
-
-void draw() {
-  switch (screen_transition_number) {
+void mousePressed() {
+  switch(screen_transition_number) {
     case(0):
-    lock_screen();
+    screen_transition_number = 1;
     break;
     case(1):
-    home();
+    screen_transition_number = 0;
     break;
     case(2):
+    screen_transition_number = 1;
     break;
+    case(3):
+    case(4):
     case(10):
     break;
     case(110):
-    background(255);
     break;
     case(11):
     break;
     case(111):
-    background(127);
     break;
     case(12):
     break;

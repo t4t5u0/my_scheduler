@@ -1,3 +1,2 @@
-void page_transition(){
-
+void page_transition() {
 }
