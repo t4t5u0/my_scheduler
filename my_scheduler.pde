@@ -1,6 +1,7 @@
 int screen_transition_number = 0;
 void setup() {
   size(480, 640);
+  //translate(width/2, height/2);
 }
 
 void draw() {
@@ -9,7 +10,8 @@ void draw() {
     lock_screen();
     break;
     case(1):
-    home();
+    screen_2();
+    //home();
     break;
     case(2):
     break;
@@ -26,6 +28,7 @@ void draw() {
     case(12):
     break;
     case(112):
+    
     break;
     case(13):
     break;

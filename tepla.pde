@@ -1,4 +1,4 @@
-void tepla(String ravel, float ravel_x, float ravel_y, float ravel_width, float ravel_height) {
+void tepla(String ravel, float ravel_x, float ravel_y, float ravel_width, float ravel_height) {//文字列、フォント、X,Y,幅、高さ、色
   fill(0, 255, 127);
   stroke(0, 255, 127);
   rect(ravel_x, ravel_y, ravel_width, ravel_height);
