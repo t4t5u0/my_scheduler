@@ -1,17 +1,19 @@
 int screen_transition_number = 0;
 void setup() {
   size(480, 640);
-  //translate(width/2, height/2);
+  //translate(-width/2, -height/2);
 }
 
 void draw() {
   switch (screen_transition_number) {
     case(0):
+    background(#333333);
     lock_screen();
     break;
     case(1):
-    screen_2();
-    //home();
+    background(#333333);
+    //screen_2();
+    home();
     break;
     case(2):
     break;
@@ -35,6 +37,8 @@ void draw() {
     case(113):
     break;
     case(14):
+    background(#333333);
+    calender();
     break;
     case(114):
     break;

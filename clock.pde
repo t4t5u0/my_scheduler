@@ -3,6 +3,7 @@ void clock(int clock_width, int screen_width, int screen_height) {
   float m = minute() + (s/60.0);
   float h = hour()%12 + (m/60.0);
 
+  translate(width/2,height/2);
   change_font(0);
   background(0);
   fill(127);
@@ -13,18 +14,19 @@ void clock(int clock_width, int screen_width, int screen_height) {
   //秒針
   pushMatrix();
   rotate(radians(s*(360/60))+HALF_PI);
-  tepla("秒針", 0, -15, -clock_width/2, 30);
+  tepla("秒針",0, 0, -15, -clock_width/2, 30,"RED");
   popMatrix();
 
   //分針
   pushMatrix();
   rotate(radians(m*(360/60))+HALF_PI);
-  tepla("分針", 0, -15, -clock_width/2, 30);
+  tepla("分針", 0 ,0, -15, -clock_width/2, 30,"GREEN");
   popMatrix();
 
   //時針
   pushMatrix();
   rotate(radians(h*(360/12))+HALF_PI);
-  tepla("時針", 0, -15, -clock_width/3, 30);
+  tepla("時針",0 ,0, -15, -clock_width/3, 30,"BLUE");
   popMatrix();
+  translate(-width/2,-height/2);
 }

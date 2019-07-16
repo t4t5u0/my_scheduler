@@ -1,4 +1,5 @@
-void mousePressed() {
+
+void mouseReleased() {
   switch(screen_transition_number) {
     case(0):
     screen_transition_number = 1;
@@ -28,6 +29,7 @@ void mousePressed() {
     case(113):
     break;
     case(14):
+    screen_transition_number=1;
     break;
     case(114):
     break;
